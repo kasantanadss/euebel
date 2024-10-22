@@ -1,0 +1,73 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(36, 36, 99);
+    overflow-x: hidden;
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.casal {
+    width: 300px;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+}
+
+.desc {
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+}
+
+p {
+    color: #fff;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#time {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.heart-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+.heart {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    animation: float 10s linear infinite;
+    opacity: 0.8;
+    z-index: 2; /* Garante que os corações fiquem sobre a imagem */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
